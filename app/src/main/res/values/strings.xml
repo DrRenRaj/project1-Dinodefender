@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">Project1_S24</string>
+    <string name="header_text">Please enter your first and last name below to login:</string>
+    <string name="welcome_text">Hello %s, we hope you enjoy using the app!</string>
+    <string name="start_message">Get Started</string>
+    <string name="login_form_entry_error">Please fill in both First and Last name fields!</string>
+    <string name="login_error">Either your first or last name is not recognised! Please try again.</string>
+    <string name="username_label">Enter your First Name:</string>
+    <string name="password_label">Enter your Last Name:</string>
+    <string name="submit_button_text">LOGIN</string>
+    <string name="back_button_text">GO BACK</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="home">Home</string>
+    <string name="settings">Settings</string>
+    <string name="content">Content</string>
+    <string name="archive">Archive</string>
+    <string name="recent">Recent</string>
+    <string name="history">history</string>
+    <string name="bin">Bin</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="settings_fragment">Settings Fragment</string>
+    <string name="content_fragment">Content Fragment</string>
+    <string name="archive_fragment">Archive Fragment</string>
+    <string name="recent_fragment">Recent Fragment</string>
+    <string name="geography_fragment">Geography Fragment</string>
+    <string name="bin_fragment">Bin Fragment</string>
+    <string name="link_to_content_button">Link to Content Button</string>
+    <string name="geography">Geography</string>
+    <string name="history_fragment">History</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="content_message">This is where we get started select a subject to learn more</string>
+    <string name="history_1900">History 1900</string>
+    <string name="history_1800">History 1800</string>
 </resources>
