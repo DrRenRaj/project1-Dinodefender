@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BugCFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="with the recent tab it's intention is that when selected in the drawer menu it brings you back to the last tab you were on. This however does not always work and sometimes it randomly gets stuck in a loop. This is a bug because it is not functioning as intended."
+        android:textSize="20sp" />
+
+</FrameLayout>

@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.lifecycle.ViewModelProvider
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -14,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [GeographyFragment.newInstance] factory method to
+ * Use the [BugAFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class GeographyFragment : Fragment() {
+class BugAFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -35,7 +34,7 @@ class GeographyFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_geography, container, false)
+        return inflater.inflate(R.layout.fragment_bug_a, container, false)
     }
 
     companion object {
@@ -45,25 +44,16 @@ class GeographyFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment Geography.
+         * @return A new instance of fragment BugAFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            GeographyFragment().apply {
+            BugAFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
                 }
             }
-    }
-    override fun onResume() {
-        super.onResume()
-
-        // Get the shared ViewModel
-        val sharedViewModel = ViewModelProvider(requireActivity()).get(SharedViewModel::class.java)
-
-        // Update the lastFragmentId
-        sharedViewModel.lastFragmentId = R.id.nav_geography  // Replace with the actual ID of your fragment
     }
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BugBFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="This may be a bug or a feature, but the backbutton does not always appear for every fragment and it only appears for some and not other navigation paths and not others. This is a bug because it is not consistent and the user should be able to navigate back to the previous fragment."
+        android:textSize="20sp" />
+
+</FrameLayout>

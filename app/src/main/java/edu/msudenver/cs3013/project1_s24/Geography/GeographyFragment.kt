@@ -1,25 +1,22 @@
-package edu.msudenver.cs3013.project1_s24
+package edu.msudenver.cs3013.project1_s24.Geography
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.Navigation
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
+import edu.msudenver.cs3013.project1_s24.R
+import edu.msudenver.cs3013.project1_s24.SharedViewModel
 
 /**
  * A simple [Fragment] subclass.
- * Use the [HistoryFragment.newInstance] factory method to
+ * Use the [GeographyFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class HistoryFragment : Fragment() {
+class GeographyFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,13 +24,9 @@ class HistoryFragment : Fragment() {
 
     ): View? {
 
-        val view = inflater.inflate(R.layout.fragment_history, container, false)
-        view.findViewById<Button>(R.id.button_1800)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.nav_history_to_1800, null)
-
-        )
-        view.findViewById<Button>(R.id.button_1900)?.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.nav_history_to_1900, null)
+        val view = inflater.inflate(R.layout.fragment_geography, container, false)
+        view.findViewById<Button>(R.id.button_US)?.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.nav_geography_to_us, null)
 
         )
         return view

@@ -27,7 +27,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
         android:layout_marginTop="40dp"
-        android:text="Please select a subject"
+        android:text="What Year was the American Civil War?"
         android:textAlignment="center"
         android:textSize="45sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -36,17 +36,55 @@
         app:layout_constraintTop_toBottomOf="@id/welcome_text" />
 
     <Button
-        android:id="@+id/civil_war_button"
-        android:layout_width="260dp"
-        android:layout_height="80dp"
+        android:id="@+id/button_A"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
         android:layout_marginTop="92dp"
-        android:textSize="20sp"
-        android:text="The American Civil War"
+        android:text="1821"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/question_text" />
 
+    <Button
+        android:id="@+id/button_B"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="1812"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_A" />
+    <Button
+        android:id="@+id/button_C"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:text="1865"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_B" />
+    <Button
+        android:id="@+id/button_D"
+        android:layout_width="140dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        android:text="1861"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_C" />
 
+    <EditText
+        android:id="@+id/answer_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="428dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_D" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

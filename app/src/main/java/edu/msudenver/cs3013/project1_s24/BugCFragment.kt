@@ -13,10 +13,10 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [History1900.newInstance] factory method to
+ * Use the [BugCFragment.newInstance] factory method to
  * create an instance of this fragment.
  */
-class History1900 : Fragment() {
+class BugCFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -34,7 +34,7 @@ class History1900 : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_history_1900, container, false)
+        return inflater.inflate(R.layout.fragment_bug_c, container, false)
     }
 
     companion object {
@@ -44,12 +44,12 @@ class History1900 : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment History_1900.
+         * @return A new instance of fragment BugCFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            History1900().apply {
+            BugCFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

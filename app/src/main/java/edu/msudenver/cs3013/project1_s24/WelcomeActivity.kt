@@ -1,11 +1,8 @@
 package edu.msudenver.cs3013.project1_s24
 
 import android.app.Activity
-import android.content.Context
+import android.content.Intent
 import android.os.Bundle
-import android.util.AttributeSet
-import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController;
 import androidx.navigation.fragment.NavHostFragment;
@@ -26,14 +23,32 @@ class WelcomeActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_welcome);
         setSupportActionBar(findViewById(R.id.toolbar));
+
+        val navView: NavigationView = findViewById(R.id.nav_view)
+        navView.setNavigationItemSelectedListener { menuItem ->
+            when (menuItem.itemId) {
+                R.id.nav_bug -> {
+                    // Create an Intent to start BugActivity
+                    val intent = Intent(this, BugActivity::class.java)
+                    // Use the Intent to start the BugActivity
+                    startActivity(intent)
+                    true
+                }
+                // Handle other menu items...
+                else -> false
+            }
+        }
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment;
         val navController = navHostFragment.navController;
 
+
+
+
         appBarConfiguration = AppBarConfiguration(
             setOf(
                 R.id.nav_home, R.id.nav_recent, R.id.nav_history, R.id.nav_geography,
-                R.id.nav_archive, R.id.nav_bin
+                R.id.nav_bug
 
             ),
 
@@ -64,6 +79,7 @@ class WelcomeActivity : AppCompatActivity() {
                 setResult(Activity.RESULT_OK, loginIntent)
 
         }
+
 
     }
     override fun onSupportNavigateUp(): Boolean {

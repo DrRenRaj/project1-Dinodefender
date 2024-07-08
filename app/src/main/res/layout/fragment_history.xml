@@ -37,13 +37,4 @@
         app:layout_constraintTop_toBottomOf="@+id/button_1800" />
 
 
-    <Button
-        android:id="@+id/button_1900"
-        android:layout_width="140dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/history_1900"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_1800" />
 </androidx.constraintlayout.widget.ConstraintLayout>

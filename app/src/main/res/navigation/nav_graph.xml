@@ -46,37 +46,68 @@
     <action
         android:id="@+id/nav_history_to_1800"
         app:destination="@id/nav_history1800"
-        app:popUpTo="@id/nav_content" />
+        app:popUpTo="@id/nav_history" />
+    <action
+        android:id="@+id/nav_history_to_1900"
+        app:destination="@id/nav_history1900"
+        app:popUpTo="@id/nav_history" />
+
     </fragment>
 
     <fragment
         android:id="@+id/nav_history1800"
-        android:name="edu.msudenver.cs3013.project1_s24.History1800"
+        android:name="edu.msudenver.cs3013.project1_s24.History_1800.History1800"
         android:label="@string/history"
         tools:layout="@layout/fragment_history_1800" />
-
+    <action
+        android:id="@+id/nav_history1800_to_ACivilWar"
+        app:destination="@id/nav_history_civil_war"
+        app:popUpTo="@id/nav_history1800" />
 
 
     <fragment
-        android:id="@+id/nav_archive"
-        android:name="edu.msudenver.cs3013.project1_s24.ArchiveFragment"
-        android:label="@string/archive"
-        tools:layout="@layout/fragment_archive" />
+        android:id="@+id/nav_history1900"
+        android:name="edu.msudenver.cs3013.project1_s24.History_1900.History1900"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history_1900" />
+    <action
+        android:id="@+id/nav_history1900_to_WWI"
+        app:destination="@id/nav_history_WWI"
+        app:popUpTo="@id/nav_history1900" />
+
 
     <fragment
-        android:id="@+id/nav_bin"
-        android:name="edu.msudenver.cs3013.project1_s24.BinFragment"
-        android:label="@string/bin"
-        tools:layout="@layout/fragment_bin" />
+        android:id="@+id/nav_history_WWI"
+        android:name="edu.msudenver.cs3013.project1_s24.History_1900.HistoryWW1"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history_w_w1"/>
 
     <fragment
-        android:id="@+id/nav_settings"
-        android:name="edu.msudenver.cs3013.project1_s24.SettingsFragment"
-        android:label="@string/settings"
-        tools:layout="@layout/fragment_settings" />
+        android:id="@+id/nav_history_civil_war"
+        android:name="edu.msudenver.cs3013.project1_s24.History_1800.History_civil_war"
+        android:label="@string/history"
+        tools:layout="@layout/fragment_history_civil_war" />
+
+    <activity
+        android:id="@+id/nav_bug"
+        android:name="edu.msudenver.cs3013.project1_s24.BugActivity"
+        android:label="@string/bug"
+        tools:layout="@layout/bug_activity" />
+
     <fragment
         android:id="@+id/nav_geography"
-        android:name="edu.msudenver.cs3013.project1_s24.GeographyFragment"
+        android:name="edu.msudenver.cs3013.project1_s24.Geography.GeographyFragment"
         android:label="@string/geography"
         tools:layout="@layout/fragment_geography" />
+    <action
+        android:id="@+id/nav_geography_to_us"
+        app:destination="@id/nav_geography_us"
+        app:popUpTo="@id/nav_geography" />
+
+    <fragment
+        android:id="@+id/nav_geography_us"
+        android:name="edu.msudenver.cs3013.project1_s24.Geography.GeographyUS"
+        android:label="@string/geography"
+        tools:layout="@layout/fragment_geography_u_s" />
+
 </navigation>

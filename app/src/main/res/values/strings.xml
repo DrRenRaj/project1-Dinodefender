@@ -16,7 +16,11 @@
     <string name="archive">Archive</string>
     <string name="recent">Recent</string>
     <string name="history">history</string>
-    <string name="bin">Bin</string>
+    <string name="bug">Bug</string>
+    <string name="bugA">Bug home Fragment</string>
+    <string name="bugB">Bug back button</string>
+    <string name="bugC">Recent tab bug</string>
+
     <string name="home_fragment">Home Fragment</string>
     <string name="settings_fragment">Settings Fragment</string>
     <string name="content_fragment">Content Fragment</string>
@@ -32,4 +36,6 @@
     <string name="content_message">This is where we get started select a subject to learn more</string>
     <string name="history_1900">History 1900</string>
     <string name="history_1800">History 1800</string>
+    <string name="blank">("o")</string>
+    <string name="Geography">Hello select a region below to get started!</string>
 </resources>
